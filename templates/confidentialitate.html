@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+
+
+    <script type="text/javascript" src="public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="public//js/placeholders.min.js"></script>
+    <script type="text/javascript" src="public/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="public//js/dr.js"></script>
+    <script type="text/javascript" src="public/js/dtime.js"></script>
+    <script type="text/javascript" src="public/js/js.cookie.js"></script>
+    <script type="text/javascript" src="public/js/validation.js"></script>
+    <script type="text/javascript" src="public/js/order_me.js"></script>
+
+    <script type="text/javascript" src="public/js/sender.js"></script>
+
+    <script>
+
+        var package_prices = {};
+        var shipment_price = 20;
+        var name_hint = 'Numele și prenumele tău';
+        var phone_hint = 'Nr. tău de telefon (Te sunăm noi!)';
+
+        $(document).ready(function() {
+
+
+
+
+            moment.locale("ro");
+            $('.day-before').text(moment().subtract(1, 'day').format('D.MM.YYYY'));
+            $('.day-after').text(moment().add(1, 'day').format('D.MM.YYYY'));
+
+        });
+    </script>
+    <link type="text/css" href="public/css/order_me.css" rel="stylesheet" media="all">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ochelari De Condus - Set Complet - Pentru Zi/Noapte!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <script src="{% static "js/jquery_003.js" %}"></script>
+    <link href="{% static "css/css.css" %}" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="{% static "css/normalize.css" %}">
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
+    <script type="text/javascript" src="{% static "js/jquery_002.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/common.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/scroll.js" %}"></script>
+    <script src="{% static "js/jcarousel.js" %}"></script>
+    <script src="{% static "js/slider.js" %}"></script>
+    <script src="{% static "js/modernizr-2.js" %}"></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99601839-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </head>
+  <body>
+
+
+  <header class="header">
+    <div class="container clearfix for_scroll">
+      <a href="#" class="logo text-hide">OchelariDeCondus.COM</a>
+      <ul class="nav-menu clearfix">
+        <li class="nav-menu-item"><a href="#go_avantaje">Descoperă avantajele</a></li>
+        <li class="nav-menu-item"><a href="#go_instructiuni" data-goto=".section-properties">Instrucțiuni</a></li>
+        <li class="nav-menu-item"><a href="#go_clienti" data-goto=".section-instructions">Părerea clienților</a></li>
+        <li style="float:right; margin:13px 0px 0px 50px;color:#fdf401">COMENZI TELEFONICE: 0785 287 496</li>
+      </ul>
+      <a href="#go_form" class="btn btn-header" data-goto=".section-order">Comandă</a>
+    </div>
+  </header> <!-- / .header -->
+
+
+  <main class="wrap">
+    <div class="container">
+      <div class="section" style="background:#fff;padding:20px;min-height:700px;"><br /><br />
+        <h1 style="color:#000">Confidentialitate</h1>
+          Toate datele personale pe care ni le furnizati in calitate de utilizator/vizitator beneficiaza de prelucrare numai in scopul oferirii in conditii optime a serviciilor asociate site-ului OchelariDCondus.COM<br /><br />
+          Prin completarea formularului de pe OchelariDCondus.COM, utilizatorul declara ca isi da, in mod expres si neechivoc, consimtamantul ca datele sale cu caracter personal sa fie prelucrate si folosite in viitor de catre administratorii OchelariDeCondus.COM in urmatoarele scopuri:<br />
+          Stabilirea contactului cu clientii;<br />
+          Prelucrarea comenzilor;<br />
+          Participarea la concursuri, promotii;<br />
+          Transmiterea de mesaje non-comerciale sau de tip administrativ (privind schimbari in site, contul de utilizator, etc);<br /><br />
+          Transmiterea de oferte, promotii, mesaje publicitare si de marketing privind activitatea OchelariDCondus.COM si a tertilor cu care OchelariDCondus.COM are relatii de orice natura (inclusiv comerciale).<br />
+          Compania va retine datele personale si le va folosi in scopul informarii utilizatorilor privind situatia contului de pe OchelariDCondus.COM, privind evolutia si starea comenzilor, precum si in evaluarea produselor si serviciilor oferite.<br /><br />
+          Informatiile solicitate in cazul platilor online intra sub incidenta conditiilor de utilizare a procesatorilor de plati, iar OchelariDeCondus.COM nu va solicita si nu va stoca niciun detaliu referitor la cardul dumneavoastra.<br />
+          Daca aveti intrebari sau nelamuriri in legatura cu acesti termeni de confidentialitate, nu ezitati sa ne contactati prin intermediul numarului de telefon 0785 287 496, adresa de email contact(at)OchelariDCondus.COM
+
+
+      </div>
+
+
+    <div class="footer_links">
+        <a href="/termeni">Termeni si Conditii</a> |
+        <a href="/confidentialitate">Confidentialitate</a> |
+        <a href="/contact">Contact</a>
+    </div>
+
+  </body>
+</html>

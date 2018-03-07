@@ -1,0 +1,535 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+      style=""><!--<![endif]-->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+    <script async="" src="js/analytics.js"></script>
+    <script src="index_files/1048624201906243.js" async=""></script>
+    <script async="" src="index_files/fbevents.js"></script>
+    <script type="text/javascript" src="{% static "js/jquery.js" %}"></script>
+
+
+    <script type="text/javascript" src="{% static "js/placeholders.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/moment-with-locales.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/dr.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/dtime.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/js.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/validation.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/order_me.js" %}"></script>
+
+    <script type="text/javascript" src="{% static "js/sender.js" %}"></script>
+
+    <script>
+        var package_prices = {};
+        var shipment_price = 0;
+        var name_hint = 'Numele și prenumele tău';
+        var phone_hint = 'Nr. tau de telefon';
+        var email_hint = 'Adresa ta de email';
+        var strada_hint = 'Strada pentru livrare';
+
+        var localitate_hint = 'Localitatea de livrare';
+
+        var judet_hint = 'Judetul de livrare';
+
+        $(document).ready(function () {
+            moment.locale("ro");
+            $('.day-before').text(moment().subtract(1, 'day').format('D.MM.YYYY'));
+            $('.day-after').text(moment().add(1, 'day').format('D.MM.YYYY'));
+
+        });
+    </script>
+
+
+    <link type="text/css" href="{% static "css/order_me.css" %}" rel="stylesheet" media="all">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ochelari De Condus - Set Complet - Pentru Zi/Noapte!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="{% static "js/jquery_003.js" %}"></script>
+    <link href="{% static "css/css.css" %}" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="{% static "css/normalize.css" %}">
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
+    <script type="text/javascript" src="{% static "js/jquery_002.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/common.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/scroll.js" %}"></script>
+    <script src="{% static "js/jcarousel.js" %}"></script>
+    <script src="{% static "js/slider.js" %}"></script>
+    <script src="{% static "js/modernizr-2.js" %}"></script>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1048624201906243');
+        fbq('track', 'PageView');
+        fbq('track', 'ViewContent');
+
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1048624201906243&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('#nr_pachete').on('change', function () {
+                var pachet = this.value;
+
+                if (pachet == "1pachet") {
+                    $("span.pret_pachete").html("99");
+                    $("span.pret_vechi_ajax").html("198");
+
+                }
+
+                if (pachet == "2pachete") {
+                    $("span.pret_pachete").html("178");
+                    $("span.pret_vechi_ajax").html("396");
+                }
+
+                if (pachet == "3pachete") {
+                    $("span.pret_pachete").html("257");
+                    $("span.pret_vechi_ajax").html("594");
+                }
+            });
+
+            $(function ($) {
+                if (navigator.userAgent.match('iPad|iPhone|iPod') != -1) {
+                    $('select').addClass('iOSselect'); // provide a class for iOS select box
+                }
+            });
+
+
+        });
+
+
+    </script>
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-99601839-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body>
+
+<h1 style="color: red; text-align: center;">{{ context }}</h1>
+<header class="header">
+    <div class="container clearfix for_scroll">
+        <a href="#" class="logo text-hide">OchelariDeCondus.COM</a>
+        <ul class="nav-menu clearfix">
+            <li class="nav-menu-item"><a href="#go_avantaje">Descoperă avantajele</a></li>
+            <li class="nav-menu-item"><a href="#go_instructiuni" data-goto=".section-properties">Instrucțiuni</a></li>
+            <li class="nav-menu-item"><a href="#go_clienti" data-goto=".section-instructions">Părerea clienților</a>
+            </li>
+            <li style="float:right; margin:13px 0px 0px 50px;color:#fdf401">COMENZI TELEFONICE: 0738 936 338</li>
+        </ul>
+        <a href="#go_form" class="btn btn-header" data-goto=".section-order">Comandă</a>
+    </div>
+</header> <!-- / .header -->
+
+<main class="wrap">
+    <div class="container">
+        <div class="section section-intro">
+
+            <div class="product"></div>
+            <dl class="product-price">
+                <dt class="price-old _title">preț vechi</dt>
+                <dd class="price-old _count">198 RON <span class="strike"></span></dd>
+                <dt class="price-new _title">preț nou</dt>
+                <dd class="price-new _count"><span data-invoiceprice="">99 </span> RON</dd>
+                <dt class="price-new _title">Transport Inclus</dt>
+            </dl>
+
+            <div class="features-list-images"></div>
+
+            <ul class="features-list">
+                <li>Mai MULTĂ siguranță în trafic!</li>
+                <li class="_large">Mai MULTĂ relaxare în trafic!</li>
+                <li>Profită de NOUA tehnologie!</li>
+            </ul>
+
+            <div class="naturals-100">
+                <p>Scapă de farurile care te orbesc și<br>bucură-te de plăcerea condusului!</p>
+            </div>
+        </div><!-- / .section-intro -->
+
+        <div class="video-block videoWrapper">
+<iframe width="780" height="439" src="https://www.youtube.com/embed/0cmR2rZorbU?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen volume="0"></iframe>
+</div>
+
+
+        <div class="section section-components">
+
+            <div class="call clearfix">
+
+
+                <p class="left-col">Descoperă revoluționarii <b>Ochelari De Condus</b> noaptea și protejează-te de
+                    pericole, bucurându-vă de plăcerea condusului!
+                </p>
+                <p class="right-col for_scroll">
+                    <a href="#go_form" class="btn" data-goto=".section-order">Vreau să încerc</a>
+                </p>
+
+
+            </div>
+
+            <h2 class="title-section" id="go_avantaje">Avantajele Ochelarilor De Condus</h2>
+
+            <div class="ingedients">
+                <dl class="calitate-100">
+                    <dt><h3 class="title">Noaptea</h3></dt>
+                    <dd>Ochelarii De Condus sunt perfecți pentru condusul pe
+                        timpul nopții, deoarece reduce efectul de orbire al farurilor și
+                        lămpilor stradale.
+                    </dd>
+                </dl>
+
+                <dl class="remediu">
+                    <dt><h3 class="title">Ziua</h3></dt>
+                    <dd>Vă deranjează razele de soare? Alegeți ochelarii cu
+                        lentile care filtrează razele de soare orbitoare. La conducere sunt
+                        foarte recomandați.
+                    </dd>
+                </dl>
+
+                <dl class="rezultat-rapid">
+                    <dt><h3 class="title">ORICE VREME</h3></dt>
+                    <dd>Tehnologia de ultima generație a Ochelarilor De Condus
+                        sporește vizibilitatea pe timp de noapte, ceață, ploaie sau vreme
+                        nefavorabilă.
+                    </dd>
+                </dl>
+
+                <dl class="produs-natural">
+                    <dt><h3 class="title">RECOMANDAT</h3></dt>
+                    <dd>Milioane de șoferi din lumea întreagă se bucură deja de un condus mult mai lipsit de griji
+                        datorită Ochelarilor De Condus.
+                    </dd>
+                </dl>
+
+                <dl class="anti-riduri">
+                    <dt><h3 class="title">RELAXARE</h3></dt>
+                    <dd>Gata cu stresul de a nu vedea la timp pericolele
+                        nocturne. Poți sta relaxat! Acești ochelari opresc razele de lumină
+                        reflectate de obiectele înconjurătoare!
+                    </dd>
+                </dl>
+
+                <dl class="anti-iritati">
+                    <dt><h3 class="title">PROTECȚIE</h3></dt>
+                    <dd>Ochelari De Condus (UV 400 / CE ) oferă protecție 100 % față de razele ultraviolete.</dd>
+                </dl>
+
+            </div>
+
+        </div><!-- / .section-components -->
+
+        <div class="section section-properties">
+            <h2 class="title-section">
+                ALIATUL TĂU PENTRU UN CONDUS SIGUR!
+            </h2>
+
+            <ol class="chart clearfix">
+                <li class="_hight">reduce lumina orbitoare</li>
+                <li class="_medium">reduce reflexia de lumină</li>
+                <li class="_low">crește vizibilitatea</li>
+            </ol>
+
+            <div class="features-list clearfix">
+                <ul>
+                    <li>Crește vizibilitatea pe timp de ceață, noapte, plafon gros de nori, ploaie, ninsoare și orice
+                        situație cu vizibilitate scăzută.
+                    </li>
+                    <li>Protejează ochii și sporește securitatea în timpul mersului.</li>
+                </ul>
+                <ul>
+                    <li>Culoarea galbenă oferă o atmosferă caldă, care induce senzația de căldură și confort.</li>
+                    <li>Mărește raza de vizibilitate.</li>
+                    <li>Pot fi purtați de șoferi, cicliști,<br>schiori, pescari, etc.</li>
+                </ul>
+            </div>
+
+
+            <div class="call-block for_scroll">
+                <h4 class="title">Alegerea perfectă</h4>
+                <a href="#go_form" class="btn" data-goto=".section-order">Vreau să comand!</a>
+            </div><!-- / .call-block -->
+        </div><!-- / .section-properties -->
+
+
+        <div class="section section-doctor">
+            <div class="content">
+                <h2 class="title-section">Ochelari De Condus Noaptea/Ziua!</h2>
+
+                <p>Studii recente arată faptul că deși doar 10% din traficul
+                    auto se desfășoară în timpul nopții, aproximativ 48% dintre accidentele
+                    auto înregistrate pe șosele au loc în această perioadă, una dintre cauze
+                    fiind o vizibilitate mult mai scăzută în timpul nopții decât pe
+                    parcursul zilei.
+                </p>
+
+                <p>Ochelarii cu lentile speciale pentru condus pe timp de
+                    noapte au fost inițial inventați pentru a-i ajuta pe piloții care
+                    participau la Cursa de 24h de la Le Mans, reacțiile extrem de pozitive
+                    ale acestora au dus la comercializarea acestui tip de ochelari și pentru
+                    publicul larg.
+                </p>
+
+                <p>Având în vedere că siguranța pe șosele este extrem de
+                    importantă, lentilele speciale pentru condus pe timp de noapte sunt o
+                    investiție care trebuie luată în calcul de către orice șofer.</p>
+            </div>
+
+            <p class="lead">
+                Ochelari De Condus te ajuta să EVIȚI PERICOLELE DIN TRAFIC
+            </p>
+
+            <div class="call-block for_scroll">
+                <a href="#go_form" class="btn" data-goto=".section-order">Comandă</a>
+            </div><!-- / .call-block -->
+        </div><!-- / .section-doctor -->
+
+        <div class="section section-solutions">
+            <div class="content">
+                <p class="lead">Ochelarii De Condus au fost concepuți special
+                    pentru a evidențializa contrastul de imagine pe timp nefavorabil și de a
+                    elimina culoarea albicioasă care provoaca oboseală și tendința de a
+                    adormi la volan, astfel imaginea devine mai clară, iar culoarea galbenă
+                    oferă o atmosferă caldă, optimistă care induce o senzație de căldură și
+                    confort în timpul condusului!</p>
+
+
+                <ul class="recomendation-list">
+                    <li>Obiectele confuze din cauza întunericului sunt scoase în evidență devenind mult mai vizibile.
+                    </li>
+                    <li>Ochelarii protejează vederea de farurile automobilelor venind din sens contrar, ce ar putea orbi
+                        conducătorul auto.
+                    </li>
+                    <li>Sunt un produs nou cu proprietăți deosebite având calități excepționale pentru conducătorii
+                        auto.
+                    </li>
+                </ul>
+
+                <div class="call-block">
+                    <button class="btn" data-goto=".section-order">Comandă</button>
+                </div>
+            </div>
+        </div><!-- / .section-stylist -->
+
+
+        <div class="section section-reviews" id="go_clienti">
+            <h2 class="title-section">Ochelari De Condus recomandați de către sute de șoferi din întreaga lume!</h2>
+
+            <div class="sliderslider">
+                <div class="slider jcarousel" data-jcarousel="true">
+                    <div style="left: 0px; top: 0px;">
+                        <div class="slide-list">
+                            <blockquote>
+                                <p><img src="{% static "css/review-one.jpg" %}" alt=""></p>
+
+                                <p>Eram destul de sceptic că vor avea un efect. Citisem despre
+                                    ei, dar până nu vezi, nu crezi. Eu mi-am luat și sunt foarte multumit.
+                                    Nu trebuie să mă mai stresez atât de luminile farurilor altor mașini și
+                                    văd curbele mult mai clar pe timp de noapte. Super tari! Îi recomand cu
+                                    plăcere.</p>
+                                <footer>- Dragoș din Sibiu -</footer>
+                            </blockquote>
+                        </div>
+                        <div class="slide-list">
+                            <blockquote>
+                                <p><img src="{% static "css/review-two.jpg" %}" alt=""></p>
+
+                                <p>Soția mea nu voia să conducă noaptea, așa că i-am cumpărat
+                                    ochelarii de condus de pe site-ul dvs. Funcționează minunat, acum putem
+                                    ieși fără griji la un restaurant cu prietenii, pentru că știu că dacă
+                                    beau ceva, conduce ea la întoarcere. Face toți banii!</p>
+                                <footer>- Mircea din Timișioara -</footer>
+                            </blockquote>
+                        </div>
+                        <div class="slide-list">
+                            <blockquote>
+                                <p><img src="{% static "css/review-three.jpg" %}" alt=""></p>
+
+                                <p>Sunt șofer de tir și să conduc noaptea era stresul, pardon,
+                                    jobul meu :). Bine că am descoperit acești ochelari. Acum chiar pot să
+                                    văd două faruri când îmi vine o mașină din față, nu doar o lumină
+                                    orbitoare pe șosea. Slava Domnului, pot să îmi văd de treabă și să mă
+                                    întorc acasă întreg.</p>
+                                <footer>- Vlad din Cluj -</footer>
+                            </blockquote>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <a class="jcarousel-prev" href="#" data-jcarouselcontrol="true"></a>
+                <a class="jcarousel-next" href="#" data-jcarouselcontrol="true"></a>
+            </div>
+
+        </div><!-- / .section-reviews -->
+
+        <div class="section section-order">
+            <div class="cowntdown">
+                <p class="title-final" style="font-size:18px">Comandă acum cu<span style="font-size:20px;color:#fff">50% Reducere</span>
+                </p>
+
+                <p>Promoția este valabilă</p>
+
+                <div class="promo-timer">
+                    <div class="timer-block countdownHolder countdown_please" id="countdown"></div>
+                    <div class="day_h_min">
+                        <p>ore</p>
+                        <p>minute</p>
+                        <p>secunde</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <dl class="product-price">
+                <dt class="price-old _title">preț vechi</dt>
+                <dd class="price-old _count"><span class="pret_vechi_ajax">198</span> RON<span class="strike"></span>
+                </dd>
+                <dt class="price-new _title"><span style="color:red;margin-top:-10px;">preț nou</span></dt>
+                <dd class="price-new _count"><span style="color:red"><span class="pret_pachete">99</span> RON</span>
+                </dd>
+            </dl>
+
+            <h2 class="title-section" id="go_form">Formular de comandă</h2>
+            <p style="background:#000;line-height:25px;text-align:center;font-weight:bold;margin-top:-10px;color:#fff;">
+                Pretul Este : <span class="pret_pachete">99 RON</span> - TRANSPORT INCLUS</p>
+
+
+            <a onmouseover="toggle_show('info');" onmouseout="toggle_hide()" id="infobtn">INFO</a>
+            <div id="info" style="display:none">Achitarea se face în numerar
+                la momentul livrării comenzii. Livrăm exclusiv prin curier rapid la
+                domiciliu sau oficiu - în decurs de 2 zile.
+            </div>
+            <form class="form" action="/create_order/" method="post">
+                {% csrf_token %}
+                <label>
+                    <input data-ordername="" required="" name="name" placeholder="Nume si Prenume" type="text">
+                </label>
+
+                <label>
+                    <input data-orderstrada="" required="" name="strada" placeholder="Adresa de livrare" type="text">
+                </label>
+
+                <label>
+                    <input data-orderlocalitate="" required="" name="localitate" placeholder="Localitate"
+                           class="localitate" type="text">
+                </label>
+
+                <label>
+                    <input data-orderjudet="" required="" name="judet" placeholder="Judet" class="judet" type="text">
+                </label>
+
+
+                <label>
+                    <input required="" name="phone" placeholder="Telefon Mobil" type="tel">
+                </label>
+
+                <label>
+                    <input name="email" placeholder="Adresa de email" type="email">
+                </label>
+
+
+                <label>
+                    <select name="nr_pachete" id="nr_pachete" class="iOSselect">
+                        <option value="1pachet" selected="selected">Vreau Un Set - 2 Perechi - 99 RON</option>
+                        <option value="2pachete">Vreau Două Seturi - 178 RON</option>
+                        <option value="3pachete">Vreau Trei Seturi - 257 RON</option>
+                    </select>
+                </label>
+
+
+                <button class="btn-s btn-submit" type="submit" data-ordersubmit="">Trimite Comanda!</button>
+
+                <p class="note">Pret Total: <span data-invoicetotal=""><b><span
+                        class="pret_pachete">99</span> </b></span><b> RON</b></p>
+                <p class="pret_transport">TRANSPORT INCLUS</p>
+
+                <p class="text_comenzi_tel" style="color:#000">Comenzi Telefonice: 0738 936 338</p>
+
+                <input name="time_zone" value="2" type="hidden"></form>
+
+        </div><!-- / .section-order -->
+    </div><!-- / .container -->
+
+    <div class="footer_links">
+        <a href="/termeni">Termeni și Condiții</a> |
+        <a href="/confidentialitate">Confidențialitate</a> |
+        <a href="/retur">Returnare Produse</a> |
+
+        <a href="/contact">Contact</a>
+
+        <div style="font-size:12px;margin-top:12px;">
+            This site is not a part of the FaceBook website or FaceBook INC. <br>
+            Additionally, this site is NOT endorsed by FaceBook in ANY WAY.<br>
+            FACEBOOK is a trademark of FaceBook INC.
+        </div>
+    </div>
+
+    <div class="contact_telefon_static"><a href="tel:0738936338">Comenzi Telefonice: 0738 936 338</a></div>
+
+</main><!-- / .wrap -->
+
+<script>
+    function toggle_show(id) {
+        document.getElementById(id).style.display = 'block'
+    }
+
+    function toggle_hide() {
+        document.getElementById('info').style.display = 'none';
+    }
+</script>
+
+
+</body>
+</html>
