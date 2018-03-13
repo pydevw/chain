@@ -20,11 +20,15 @@ from django.urls import path
 from app import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('create_order/', views.create_order, name='create_order'),
-    path('termeni/', views.termeni, name='termeni'),
-    path('confidentialitate/', views.confidentialitate, name='confidentialitate'),
-    path('retur/', views.retur, name='retur'),
-    path('contact/', views.contact, name='contact'),
+    path('new_order/', views.new_order, name='create_order'),
     path('admin/', admin.site.urls),
+    """ GENERAL RESPONSE => THANKS
+    #path('thanks/', views.thanks, name='thanks'),
+     """
+    #path('', views.index, name='index'),
+    #path('create_order/', views.create_order, name='new_order'),
+    #path('termeni/', views.termeni, name='termeni'),
+    #path('confidentialitate/', views.confidentialitate, name='confidentialitate'),
+    #path('retur/', views.retur, name='retur'),
+    #path('contact/', views.contact, name='contact'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -1,0 +1,84 @@
+body {
+	font-family:Georgia, sans-serif;
+	background-color:#ffffff;
+	background-image:url(images_comanda/BG.html);
+	background-repeat:repeat-x;
+	margin:0px;
+	padding:0px;
+	
+
+}
+
+.main {
+margin-left:auto;
+margin-right:auto;
+border:0px solid #FFF;
+background-color:#ffffff;
+height:980px;
+}
+
+
+.continut {
+padding:0px;
+color:#000000;
+}
+#stanga {
+	float:left;
+	width:450px;
+	}
+ul { list-style-type:none;}
+li {
+	padding-bottom:40px;
+	}
+	#dreapta {
+		float:right;
+		width:400px;
+	}
+	.button3 { height:59px!important; width:392px;background: url(images/buton.html)!important; color:#000066!important; font-size:24pt!important; font-family: Arial,sans-serif!important; }
+	a:hover, a:active { outline: none; }
+#sizer      { width: 340px; margin: 0 auto; padding: 144px 200px 240px; background: url(highlight.html) no-repeat 50% 0; }
+
+.multumim {
+	margin: 0 auto;
+    text-align: center;
+    width: 960px;
+	padding: 0 10px;
+}
+.multumim h1 {
+	color: green;
+	font-size: 31px;
+	margin: 200px 0 20px 0;
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: 0px 1px 1px #000;
+}
+.multumim h3 {
+	color: green;
+    font-size: 20px;
+    margin: 20px 0;
+    text-shadow: 1px 1px 0 #000;
+}
+.multumim p {
+	color: #000000;
+	margin: 10px 0;
+	font-size: 18px;
+}
+@media (max-width:480px) and (min-width:320px) {
+	.multumim {
+		width: 90%;
+		margin: 0;
+	}
+	.multumim h1 {
+		font-size: 32px;
+		margin: 0px 0 20px 0;
+	}
+}
+@media (max-width:640px) and (min-width:360px) {
+	.multumim {
+		width: 90%;
+		margin: 0;
+	}
+	.multumim h1 {
+		margin: 0px 0 20px 0;
+	}
+}
